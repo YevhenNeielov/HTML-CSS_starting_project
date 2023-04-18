@@ -1,0 +1,43 @@
+$google-font: "https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Quicksand:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap";
+@import url($google-font);
+
+$fontFamilyNunito: "Nunito", sans-serif;
+$fontFamilyQuicksand: "Quicksand", sans-serif;
+$fontFamilyUbuntu: "Ubuntu", sans-serif;
+$baseFontSize: 16px;
+
+$prefix: myhomework- !default;
+
+$i: "../i/";
+
+$black: #000000;
+$white: #ffffff;
+$colorBlack: #222222 !default;
+$bannerColor: #ffeaa2 !default;
+$postColor: #f5f7fa !default;
+$postTitleColor: #333333 !default;
+$buttonColor: #e63a28 !default;
+$underImageColor: #c4c4c4 !default;
+$borderColor: #eeeeee !default;
+$underLineColor: #cccccc !default;
+$searchBorderColor: #dddddd !default;
+$activeNumberColor: #2b5ae1 !default;
+$joinUsColor: #7828e6 !default;
+$enterEmailColor: #9d9d9d !default;
+
+$colors: (
+  "black": $black,
+  "white": $white,
+  "colorBlack": $colorBlack,
+  "bannerColor": $bannerColor,
+  "postColor": $postColor,
+  "postTitleColor": $postTitleColor,
+  "buttonColor": $buttonColor,
+  "underImageColor": $underImageColor,
+  "borderColor": $borderColor,
+  "underLineColor": $underLineColor,
+  "searchBorderColor": $searchBorderColor,
+  "activeNumberColor": $activeNumberColor,
+  "joinUsColor": $joinUsColor,
+  "enterEmailColor": $enterEmailColor,
+) !default;

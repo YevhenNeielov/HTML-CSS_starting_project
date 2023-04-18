@@ -1,0 +1,16 @@
+.banner {
+  width: initial;
+  margin-left: initial;
+  margin-right: initial;
+  flex-direction: row;
+  padding: 15px 0 19px;
+
+  @include e(title) {
+    padding: 20px 0 25px 26px;
+  }
+
+  @include e(image-box) {
+    height: 79px;
+    margin-bottom: 0;
+  }
+}

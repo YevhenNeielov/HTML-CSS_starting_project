@@ -1,0 +1,48 @@
+.header {
+  width: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-bottom: 7px;
+  margin-top: 53px;
+  justify-content: space-between;
+  row-gap: 0;
+
+  @include e(logo-box) {
+    order: 0;
+    margin-right: 100px;
+  }
+
+  @include e(nav) {
+    order: 0;
+    flex: 1;
+  }
+
+  @include e(lang-box) {
+    margin-right: 0;
+  }
+
+  @include e(lang) {
+    font-family: $fontFamilyUbuntu;
+    padding-right: 66px;
+    margin-right: 33px;
+
+    &::before {
+      right: 31px;
+    }
+  }
+
+  @include e(arrow-image) {
+    right: 33px;
+  }
+}
+
+.search-form {
+  @include m(header) {
+    display: none;
+  }
+}
+
+.header-nav-box {
+  justify-content: center;
+  padding: 0;
+}

@@ -1,0 +1,100 @@
+.header {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 24px;
+
+  @include e(logo-box) {
+    padding-left: 70px;
+    position: relative;
+  }
+
+  @include e(logo-image) {
+    @include absolute(54px, 55px) {
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  @include e(logo) {
+    font-family: $fontFamilyNunito;
+    font-weight: 800;
+    font-size: rem(36px);
+    line-height: 45px;
+  }
+
+  @include e(text) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $fontFamilyQuicksand;
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 18px;
+  }
+
+  @include e(nav) {
+    display: none;
+  }
+
+  @include e(lang-box) {
+    position: relative;
+    padding-top: 40px;
+    flex: 1;
+  }
+
+  @include e(menu-image) {
+    @include absolute(28px, 22px) {
+      top: 6px;
+      right: 0;
+    }
+  }
+
+  @include e(lang) {
+    margin: 0;
+    text-align: right;
+    font-family: $fontFamilyQuicksand;
+    font-weight: 400;
+    font-size: rem(16px);
+    padding-right: 51px;
+    position: relative;
+
+    @include before("flag.png", 27px, 17px) {
+      top: 2px;
+      right: 20px;
+    }
+  }
+
+  @include e(arrow-image) {
+    @include absolute(16px, 18px) {
+      top: 41px;
+      right: 0;
+    }
+  }
+}
+
+.search-form {
+  flex-basis: 100%;
+  border: 1px solid $searchBorderColor;
+  border-radius: 27px;
+  position: relative;
+
+  @include e(glass-image) {
+    @include absolute(20px, 23px) {
+      top: 18px;
+      right: 31px;
+    }
+  }
+
+  @include e(control) {
+    padding: 22px 52px 17px 50px;
+    width: 100%;
+
+    &::placeholder {
+      font-family: $fontFamilyQuicksand;
+      font-weight: 400;
+      font-size: rem(16px);
+      line-height: 20px;
+    }
+  }
+}

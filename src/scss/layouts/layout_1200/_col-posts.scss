@@ -1,0 +1,38 @@
+.col-posts {
+  width: 760px;
+  margin-left: initial;
+  margin-right: initial;
+}
+
+.post {
+  padding-top: 0;
+
+  &:last-of-type {
+    margin-bottom: 42px;
+  }
+
+  @include e(content) {
+    margin-bottom: 38px;
+  }
+
+  @include e(link) {
+    width: 150px;
+    padding: 16px 33px;
+  }
+}
+
+.post-nav-box {
+  margin-bottom: 35px;
+
+  @include e(link) {
+    &:hover {
+      color: $buttonColor;
+    }
+  }
+}
+
+.pages {
+  padding: 0;
+  margin-bottom: 37px;
+  justify-content: center;
+}

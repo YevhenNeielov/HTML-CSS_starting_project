@@ -1,0 +1,19 @@
+.blog {
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-top {
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe {
+  @include e(box) {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

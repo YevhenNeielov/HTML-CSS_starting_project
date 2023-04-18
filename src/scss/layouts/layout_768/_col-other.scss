@@ -1,0 +1,79 @@
+.col-other {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 136px;
+  row-gap: 83px;
+  justify-content: center;
+}
+
+.blog {
+  flex-basis: calc(50% - 92px);
+  margin-left: 14px;
+  margin-right: initial;
+  margin-bottom: 0;
+
+  @include e(title) {
+    margin-bottom: 34px;
+    font-weight: 500;
+  }
+}
+
+.blog-nav-box {
+  @include e(item) {
+    padding-left: 20px;
+  }
+
+  @include e(bullet-image) {
+    left: -20px;
+  }
+}
+
+.our-top {
+  flex-basis: calc(50% - 104px);
+  margin-left: initial;
+  margin-right: 46px;
+  margin-bottom: 0;
+
+  @include e(right) {
+    width: calc(100% - 70px);
+    padding: 0 13px 0 24px;
+  }
+
+  @include e(left) {
+    width: 70px;
+  }
+}
+
+.subscribe {
+  flex: 1;
+  padding: 24px 12px 28px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include e(box) {
+    width: 297px;
+    margin-left: 34px;
+    margin-right: initial;
+  }
+
+  @include e(title) {
+    margin-bottom: 25px;
+  }
+
+  @include e(text) {
+    margin-bottom: 20px;
+  }
+
+  @include e(form) {
+    width: 297px;
+  }
+
+  @include e(image-box) {
+    width: 250px;
+    height: 146px;
+    order: 0;
+    margin-right: 46px;
+    margin-bottom: 0;
+  }
+}

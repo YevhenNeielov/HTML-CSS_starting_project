@@ -1,0 +1,75 @@
+.header {
+  width: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-bottom: 19px;
+  align-items: center;
+  row-gap: 27px;
+
+  @include e(logo-box) {
+    order: -2;
+    margin-right: 57px;
+  }
+
+  @include e(nav) {
+    order: 1;
+    display: initial;
+    flex-basis: 100%;
+  }
+
+  @include e(lang-box) {
+    flex: 0;
+    padding-top: 0px;
+    margin-right: 6px;
+  }
+
+  @include e(menu-image) {
+    display: none;
+  }
+
+  @include e(arrow-image) {
+    top: 1px;
+  }
+}
+
+.search-form {
+  order: -1;
+  flex: 1;
+  margin-right: 4px;
+
+  @include e(glass-image) {
+    width: 27px;
+    right: 42px;
+  }
+
+  @include e(control) {
+    padding: 22px 67px 17px 67px;
+  }
+}
+
+.header-nav-box {
+  display: flex;
+  flex-direction: row;
+  gap: 63px;
+  align-items: center;
+  padding: 0 14px;
+
+  @include e(link) {
+    font-weight: 400;
+    font-size: rem(16px);
+    letter-spacing: -0.025rem;
+
+    @include m(pad) {
+      padding-left: 27px;
+      position: relative;
+      text-decoration: underline;
+    }
+  }
+
+  @include e(enter-image) {
+    @include absolute(18px, 21px) {
+      top: 0;
+      left: 0;
+    }
+  }
+}
